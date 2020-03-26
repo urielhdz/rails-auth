@@ -1,3 +1,7 @@
 <h1>Main#home</h1>
 <p>Find me in app/views/main/home.html.erb</p>
 <%=link_to "Cerrar sesión", destroy_user_session_path, method: :delete%>
+
+<% if !current_user.otp_required_for_login %>
+  <%=link_to "Habilitar 2FA", users_otp_enable_path, method: :patch%>
+<%end%>
