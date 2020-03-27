@@ -14,3 +14,4 @@ Los ejemplos disponibles son:
 
 1. Autenticación tradicional email/contraseñas en la rama master
 2. Autenticación a dos pasos con correo electrónico usando Devise y Devise Two Factor en la rama 2FA
+2. Autenticación con validación de la seguridad de la contraseña con la gema strong_password en la rama StrongPassword
